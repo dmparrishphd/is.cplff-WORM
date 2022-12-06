@@ -1,2 +1,1 @@
-# is.cplff-WORM
-tell whether an object is a continuous piecewise linear multifunction
+[README](https://github.com/dmparrishphd/is.cplff-CORW/blob/main/README.md).
