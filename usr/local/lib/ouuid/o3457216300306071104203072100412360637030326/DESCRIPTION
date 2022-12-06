@@ -1,0 +1,79 @@
+section--DESCRIPTION:
+                ================================================
+Package:
+                o3457216300306071104203072100412360637030326
+Type:
+                Package
+Title:
+                Identify a continuous piecewise linear
+                multifunction (CPLFF).
+Version:
+                2022.12-6
+Date:
+                2022-12-06
+Author:
+                D. Michael Parrish [aut]
+Maintainer:
+                Neat O <neatoverse@yahoo.com>
+Description:
+                Tell whether an object is a continuous piecewise
+                linear multifunction.
+                    This file is
+                o3457216300306071104203072100412360637030326/
+                DESCRIPTION
+License:
+                AGPL-3
+Encoding:
+                UTF-8
+section--INSTALL:
+                ================================================
+                To install, copy this package, including its
+                containing subdirectory, to a known directory.
+                The subdirectory should be named
+                o3457216300306071104203072100412360637030326
+                to be consistent with the design of this package.
+section---DEVELOPER-NOTES:
+                ================================================
+                This package is a modified copy of
+                o0253020427002346111545012426110200347615476
+section---HELP:
+                ================================================
+help---Usage:
+                ------------------------------------------------
+                # Replace "prefix" with the pathname to the
+                # installation subdirectory.
+                pathname <- paste0 ( "prefix" ,
+                    "/o3457216300306071104203072100412360637030326" )
+                is.cplff <- source ( paste0 ( pathname ,
+                    "/is.cplff.R" ) ) [[ 1 ]] ( pathname )
+                is.cplff ( X )
+help---Arguments:
+                ------------------------------------------------
+                X:  any object
+help---Value:
+                ------------------------------------------------
+                A `logical` value indicating whether the the
+                argument is a CPLFF.
+help---Details:
+                ------------------------------------------------
+                The representation of a CPLFF for which
+                `is.cplff` returns `TRUE` is a multipe-column
+                data frame where all columns must be `numeric`
+                and the first column---representing the "x"
+                values of the knots---must be monotonically
+                increasing.
+help---See Also:
+                ------------------------------------------------
+                Wikimedia Foundation. "Piecewise linear function"
+                https://en.wikipedia.org/wiki/Piecewise_linear_function
+                Wikimedia Foundation. "Multivalued function"
+                https://en.wikipedia.org/wiki/Multivalued_function
+help---Examples:
+                # ----------------------------------------------
+                # Replace "prefix" with the pathname to the
+                # installation subdirectory.
+                pathname <- paste0 (
+                    "prefix" ,
+                    "/27002346111545012426110200347615476" )
+                is.cplff <- source ( paste0 ( pathname ,
+                    "/is.cplff.R" ) ) [[ 1 ]] ( pathname )
